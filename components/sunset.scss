@@ -1,0 +1,45 @@
+.sunset {
+    position: relative;
+
+    &__img {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__text {
+        padding: 270px 62px 0 1080px;
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__txt {
+        width: min(298px, 100%);
+        font-size: 14px;
+        color: #C0C0C0;
+    }
+
+    &__other {
+        display: flex;
+        justify-content: center;
+        padding: 220px 0 40px 1020px;
+        gap: 16px;
+
+        &-on {
+            display: flex;
+            align-items: self-end;
+            gap: 6px;
+        }
+        
+        &-span {
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+}

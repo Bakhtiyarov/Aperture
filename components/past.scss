@@ -1,0 +1,26 @@
+.past {
+
+    &__titles {
+        margin: 120px 0 80px;
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    &__span {
+        font-weight: 400;
+        font-size: 24px;
+        color: #C0C0C0;
+    }
+
+    &__images {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 140px;
+    }
+}
