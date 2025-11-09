@@ -1,0 +1,46 @@
+.star {
+    position: relative;
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+
+    &__titles {
+        padding: 270px 62px 0 1080px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &__txt {
+        width: min(241px, 100%);
+        font-weight: 400;
+        font-size: 14px;
+        color: #C0C0C0;
+    }
+
+    &__other {
+        display: flex;
+        justify-content: center;
+        padding: 220px 0 40px 1020px;
+        gap: 16px;
+
+        &-on {
+            display: flex;
+            align-items: self-end;
+            gap: 6px;
+        }
+        
+        &-span {
+            font-size: 12px;
+            color: #fff;
+        }
+    }
+}
