@@ -73,6 +73,8 @@
   width: min(458px, 100%);
 }
 .footer__cen-input {
+  font-family: "Poppins";
+  font-size: 17px;
   width: 100%;
   height: 100%;
   padding: 0 80px 0 20px;
@@ -81,6 +83,7 @@
   outline: none;
 }
 .footer__cen-input-black {
+  cursor: pointer;
   position: absolute;
   top: 15px;
   left: 385px;
@@ -88,6 +91,11 @@
   height: 30px;
   border-radius: 11px;
   background: #000;
+}
+@media (width <= 485px) {
+  .footer__cen-input-black {
+    display: none;
+  }
 }
 .footer__end {
   margin: 56px 0 100px;
@@ -114,4 +122,42 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+}
+
+@media (width <= 850px) {
+  .footer__rek {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    gap: 70px;
+  }
+  .footer__cen {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  .footer__cen-inputs {
+    height: 60px;
+    margin: auto;
+  }
+}
+@media (width <= 600px) {
+  .footer__end {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .footer__inputs {
+    width: min(350px, 100%);
+  }
 }

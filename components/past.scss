@@ -24,3 +24,13 @@
         margin-bottom: 140px;
     }
 }
+
+@media (width <= 850px) {
+    .past {
+        &__images {
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+    }
+}

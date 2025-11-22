@@ -43,13 +43,14 @@
     }
 
     &__images {
-        margin-top: 3px;
         position: relative;
     }
 
     &__img {
         position: absolute;
         z-index: -1;
+        width: 105%;
+        height: 100%;
     }
 
     &__other {
@@ -66,6 +67,29 @@
         &-span {
             font-size: 12px;
             color: #fff;
+        }
+    }
+}
+
+@media (width <= 1350px) {
+    .tool {
+        flex-direction: column;
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+            padding: 150px 0 150px;
+        }
+
+        &__txt {
+            width: min(360px, 100%);
+        }
+
+        &__images {
+            display: none;
         }
     }
 }

@@ -10,6 +10,11 @@
         font-weight: 400;
         font-size: 40px;
         color: #fff;
+
+        @media (width <= 690px) {
+            width: min(370px, 100%);
+            font-size: 25px;
+        }
     }
 
     &__span {

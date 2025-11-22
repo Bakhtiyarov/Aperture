@@ -24,6 +24,7 @@
     }
 
     &__grid {
+        width: 576px;
         position: relative;
 
         &-img {
@@ -32,6 +33,7 @@
         }
 
         &-text {
+            width: 516px;
             padding: 421px 0 30px 30px;
         }
 
@@ -63,6 +65,55 @@
         &-span {
             font-size: 15px;
             color: #000;
+        }
+    }
+}
+
+@media (width <=1200px) {
+    .area {
+        &__grids {
+            width: 576px;
+            grid-template-columns: repeat(1, 1fr);
+            margin: auto;
+            gap: 50px;
+        }
+    }
+}
+
+@media (width <=610px) {
+    .area {
+        &__title {
+            font-size: 30px;
+        }
+
+        &__span {
+            font-size: 16px;
+        }
+
+        &__grids {
+            width: 350px;
+        }
+
+        &__grid {
+            width: 350px;
+            margin: auto;
+
+            &-img {
+                width: 350px;
+            }
+
+            &-title {
+                font-size: 12px;
+            }
+
+            &-text {
+                width: 330px;
+                padding: 185px 0 30px 30px;
+            }
+
+            &-txt {
+                font-size: 12px;
+            }
         }
     }
 }

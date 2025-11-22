@@ -20,6 +20,7 @@
   gap: 16px;
 }
 .area__grid {
+  width: 576px;
   position: relative;
 }
 .area__grid-img {
@@ -27,6 +28,7 @@
   z-index: -1;
 }
 .area__grid-text {
+  width: 516px;
   padding: 421px 0 30px 30px;
 }
 .area__grid-title {
@@ -58,4 +60,41 @@
 .area__grid-span {
   font-size: 15px;
   color: #000;
+}
+
+@media (width <= 1200px) {
+  .area__grids {
+    width: 576px;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    gap: 50px;
+  }
+}
+@media (width <= 610px) {
+  .area__title {
+    font-size: 30px;
+  }
+  .area__span {
+    font-size: 16px;
+  }
+  .area__grids {
+    width: 350px;
+  }
+  .area__grid {
+    width: 350px;
+    margin: auto;
+  }
+  .area__grid-img {
+    width: 350px;
+  }
+  .area__grid-title {
+    font-size: 12px;
+  }
+  .area__grid-text {
+    width: 330px;
+    padding: 185px 0 30px 30px;
+  }
+  .area__grid-txt {
+    font-size: 12px;
+  }
 }

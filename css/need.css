@@ -18,6 +18,12 @@
   font-size: 40px;
   color: #fff;
 }
+@media (width <= 690px) {
+  .need__title {
+    width: min(370px, 100%);
+    font-size: 25px;
+  }
+}
 .need__span {
   font-weight: 400;
   font-size: 24px;
